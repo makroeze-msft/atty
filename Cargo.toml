@@ -17,7 +17,7 @@ travis-ci = { repository = "softprops/atty" }
 libc = { version = "0.2", default-features = false }
 
 [target.'cfg(windows)'.dependencies.winapi]
-version = "0.3"
+path = "../winapi-rs"
 features = ["consoleapi", "processenv", "minwinbase", "minwindef", "winbase"]
 
 [target.'cfg(target_os = "redox")'.dependencies]
